@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:pink;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    background-color: rgb(247, 222, 255);
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px 30px;
+    border: 2px solid rgb(255, 224, 229);
+    overflow: hidden;
+    width: 100%;
+}
+
+.flowers {
+    font-size: 55px;
+    margin-bottom: 20px;
+    animation: FlowerMove 3s linear infinite;
+
+
+}
+h1{
+    color: rgb(117, 8, 8);
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+h1+p{
+    color: rgb(50, 0, 0);
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.divider {
+    width: 100px;
+    height: 3px;
+    background-color: rgb(196, 43, 173);
+    margin: 25px auto;
+
+
+}
+
+.message {
+    display: none;
+    background-color: #ffd6fe;
+    padding: 25px;
+    margin: 25px 0; 
+    border-radius: 20px;
+    
+}
+.message h2{
+    color: rgb(62, 5, 5);
+    margin-bottom: 15px;
+
+}
+.message p{
+    color: rgb(47, 6, 6);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: rgb(67, 17, 99);
+    color: aliceblue;
+    border: none;
+    padding: 16px 30px;
+    font-size: 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(39, 7, 69);
+    transform: scale(1.05);
+}
+.hearts{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.hearts span{
+    position: absolute;
+    font-size: 25px;
+    top: -30px;
+    animation: fall 6s linear infinite;
+}
+@keyframes fall{
+    from{
+        top: -30px;
+
+
+    }
+    to{
+        top: 100%;
+
+
+
+    }
+}
+@keyframes FlowerMove{
+    0%, 100%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}

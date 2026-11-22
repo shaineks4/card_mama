@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="flowers">🌹💕💖</div>
+        <h1>Любимой маме!</h1>
+        <p>Для самого доброго, нежного и дорого человека😘</p>
+
+        <div class="divider"></div>
+
+        <button id="openButton">Открыть поздравление💌</button>
+
+        <div class="message" id="message">
+            <h2>С днём Матери!</h2>
+
+            <p>
+                На большой планете всей <br>
+                Моей мамы нет добрей. <br>
+                С мамой весело поём, <br>
+                Нам не скучно с ней вдвоём! <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="hearts">
+        <span style="left: 5%; animation-delay: 0s">❤️</span>
+        <span style="left: 15%; animation-delay: 1s">💕</span>
+        <span style="left: 25%; animation-delay: 2s">💗</span>
+        <span style="left: 35%; animation-delay: 3s">💖</span>
+        <span style="left: 45%; animation-delay: 0.5s">❤️</span>
+        <span style="left: 55%; animation-delay: 1.5s">💗</span>
+        <span style="left: 65%; animation-delay: 2.5s">💕</span>
+        <span style="left: 75%; animation-delay: 3.5s">💖</span>
+        <span style="left: 85%; animation-delay: 4s">❤️</span>
+        <span style="left: 95%; animation-delay: 5s">💗</span>
+    </div>
+
+    <script>
+        const button = document.getElementById("openButton");
+        const message = document.getElementById("message");
+
+        button.addEventListener("click", function () {
+            if (message.style.display === "block") {
+                message.style.display = "none";
+                button.textContent = "Открыть поздравление 💌";
+            } else {
+                message.style.display = "block";
+                button.textContent = "Закрыть открытку";
+            }
+        });
+    </script>
+</body>
+</html>
